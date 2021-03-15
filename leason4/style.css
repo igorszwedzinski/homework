@@ -1,0 +1,114 @@
+body {
+    font-family: system-ui; 
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.navigation {
+    background-color: darksalmon;
+    color: white;
+    padding: 10px;
+}
+
+.navigationmypage, .navigationaboutus, .navigationform {
+    display: inline-block;   
+}
+
+.navigationmypage {
+    margin: 0px 0px 0px 10px;
+}
+
+.navigationaboutus {
+    margin: 0px 0px 0px 900px;
+}
+
+.navigationform {
+    margin: 0px 0px 0px 10px;
+}
+
+.navigationmypage:hover, .navigationaboutus:hover, .navigationform:hover {
+    background-color: lightgray;
+}
+
+.picture {
+    position:relative;
+    text-align: center;
+    color:darksalmon;
+    width:1424px; height:500px; overflow:hidden;
+}
+
+.textover {
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    font-size: 30px;
+    border-right: 1px solid darksalmon;
+}
+
+.button {
+    height: 150px;
+}
+
+.button1, .button2, .button3 {
+    background-color: linen;
+    margin: 0px 0px 0px 130px;
+    display: inline-block;
+    height: 110px;
+    width: 300px;
+    text-align: center;
+}
+
+.articles {
+    height: 140px;     
+    text-align: center;
+}
+
+.button1:hover, .button2:hover, .button3:hover{
+    transform: scale(1.1);
+    opacity: 0.7;
+    outline: 1px solid lightslategray;
+}
+
+.footer {
+    position:relative;
+    background-color: darksalmon;
+    height:320px;
+}
+
+.footeraboutus, .footerimage, .footerform {
+    height: 400px;
+    width: 360px;
+}*
+
+.footeraboutus {
+    position:absolute;
+    top: 20px;
+    left: 100px;
+}
+
+.footerimage{
+    position:absolute;
+    top: 100px;
+    left: 600px;
+    height: 200px;
+    width: 200px;
+}
+
+.footerform{
+    position:absolute;
+    top: 20px;
+    left: 1000px;
+}
+
+.login {
+    position: absolute;
+    top: 210px;
+    background-color: black;
+    color: white;
+    height:40px;
+    width: 90px;
+    text-align: center;
+}
