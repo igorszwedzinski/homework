@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>
+        Flex - zadanie 1
+    </title>
+  </head>
+  <style>
+    .container{
+      display:flex;
+      flex-direction: column;
+    }
+    .header{
+      background-color:blanchedalmond;
+      height:40px;
+    }
+    .main{
+      background-color:firebrick;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
+      height:300px;
+    }
+    .footer{
+      background-color:blanchedalmond;
+      height:40px;
+    }
+
+    .article{
+      background-color: blanchedalmond;
+      height:100px;
+      width:28%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+    }
+    .articleheader{
+      background-color:firebrick;
+      height:20px;
+      width: 90%;     
+    }
+    .articlemain{
+      background-color:firebrick;
+      height:50px;
+      width: 90%;
+    }
+  </style>
+  <body>
+    
+    <div class="container">
+        <div class="header"></div>
+        <div class="main">
+          <div class="article">
+            <div class="articleheader"></div>
+            <div class="articlemain"></div>
+          </div>
+          <div class="article">
+            <div class="articleheader"></div>
+            <div class="articlemain"></div>
+          </div>
+          <div class="article">            
+            <div class="articleheader"></div>
+            <div class="articlemain"></div></div>
+            <div class="article">
+              <div class="articleheader"></div>
+              <div class="articlemain"></div>
+            </div>
+            <div class="article">
+              <div class="articleheader"></div>
+              <div class="articlemain"></div>
+            </div>
+            <div class="article">            
+              <div class="articleheader"></div>
+              <div class="articlemain"></div></div>
+        </div>
+        <div class="footer"></div>
+    </div>
+
+</body>
+</html>
