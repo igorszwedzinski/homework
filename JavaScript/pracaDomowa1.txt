@@ -1,0 +1,160 @@
+Zadanie 1
+let name="Karol"
+let age=40
+let isOpen=true
+let stringBoolean="true"
+let stringNumber="100"
+
+Zadanie 2
+console.log("Michał")
+console.log("Hello Ania")
+console.log(4)
+console.log(false)
+
+Zadanie 3
+console.log(name)
+console.log(age)
+console.log(isOpen)
+console.log(stringBoolean)
+console.log(stringNumber)
+
+Zadanie 4
+console.log(2+2)
+console.log("Michał"+" "+"Kowalski")
+console.log(2+2*2)
+
+Zadanie 5
+let number=2+2
+console.log("Wynik", number)
+
+Zadanie6
+let number=2
+number=6
+number=10
+console.log(number)
+
+Zadanie 7a
+function add() {
+return 2+2
+}
+
+Zadanie 7b
+function helloWorld() {
+return "Hello World!"
+}
+
+Zadanie 7c
+function funkcja() {
+return true
+}
+
+Zadanie 7d
+function divide() {
+return 6/4
+}
+
+Zadanie 7e
+function power() {
+return 3**4
+}
+
+Zadanie 7f
+function text() {
+return "Hello,"+"How are you?"
+}
+
+Zadanie 7g
+function multiply() {
+return 5*60
+}
+
+Zadanie 7h
+function funkcja() {
+return 3*3600
+}
+
+Zadanie 7i
+function multiply() {
+return 10*9/2
+}
+
+Zadanie 7j
+function minus() {
+return 200-10
+}
+
+
+Zadanie 10a
+function add(number1,number2) {
+return number1+number2
+}
+
+Zadanie 10b
+function display(text) {
+return text
+}
+
+Zadanie 10c
+function trueFalse(value) {
+return value
+}
+
+Zadanie 10d
+function modulo(number1, number2) {
+return number1 % number2
+}
+
+Zadanie 10e
+function power(number1, number2) {
+return number1**number2
+}
+
+Zadanie 10f
+function text(text1, text2) {
+return text1+text2
+}
+
+Zadanie 10g
+function minutes_to_seconds(minutes) {
+return minutes*60
+}
+
+Zadanie 10h
+function hours_to_seconds(hours) {
+return hours*60*60
+}
+
+Zadanie 10i
+function triangle_surface(height, width) {
+return height*width*0.5
+}
+
+Zadanie 10j
+function years_to_days(years) {
+return years*365
+}
+
+Zadanie 10k
+function power(number) {
+return number**number
+}
+
+Zadanie 10l
+function longerSide(side1, side2) {
+return side1+side2-1
+}
+
+Zadanie 10m
+function hello(name) {
+return "Hello, "+name+”!”
+}
+
+Zadanie 10n
+function age(year_of_birth) {
+return 2021-year_of_birth
+}
+
+Zadanie 10m
+function personal_result(two_points_shots, three_points_shots) {
+return 2*two_points_shots+3*three_points_shots
+}
