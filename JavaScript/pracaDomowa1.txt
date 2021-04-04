@@ -83,6 +83,54 @@ function minus() {
 return 200-10
 }
 
+Zadanie 8a
+var array=[1,2,3];
+
+Zadanie 8b
+var array=["Nissan","Toyota","Mazda"];
+
+Zadanie 8c
+var array=[true,false,true];
+
+Zadanie 8d
+var array=[];
+
+Zadanie 8e
+var array=[1,true,"Asia",false,5];
+
+Zadanie 8f
+console.log(array[1])
+
+Zadanie 8g
+var array=["1","2","3"];
+console.log(array.length)
+
+Zadanie 8h
+var array=[];
+array[0]=true;
+console.log(array)
+
+Zadanie 9a
+var object = {};
+
+Zadanie 9b
+var object = {
+name: "Iza"
+};
+
+Zadanie 9c
+var personDetails = {
+name: null,
+lastName: null,
+age: null,
+drivingLicence: false, 
+};
+
+Zadanie 9d
+console.log(personDetails.age)
+
+Zadanie 9e
+console.log(personDetails)
 
 Zadanie 10a
 function add(number1,number2) {
