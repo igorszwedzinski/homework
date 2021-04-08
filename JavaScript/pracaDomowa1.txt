@@ -163,22 +163,22 @@ return text1+text2
 }
 
 Zadanie 10g
-function minutes_to_seconds(minutes) {
+function minutesToSeconds(minutes) {
 return minutes*60
 }
 
 Zadanie 10h
-function hours_to_seconds(hours) {
+function hoursToSeconds(hours) {
 return hours*60*60
 }
 
 Zadanie 10i
-function triangle_surface(height, width) {
+function triangleSurface(height, width) {
 return height*width*0.5
 }
 
 Zadanie 10j
-function years_to_days(years) {
+function yearsToDays(years) {
 return years*365
 }
 
@@ -198,11 +198,11 @@ return "Hello, "+name+”!”
 }
 
 Zadanie 10n
-function age(year_of_birth) {
-return 2021-year_of_birth
+function age(yearOfBirth) {
+return 2021-yearOfBirth
 }
 
 Zadanie 10m
-function personal_result(two_points_shots, three_points_shots) {
-return 2*two_points_shots+3*three_points_shots
+function personalResult(twoPointsShots, threePointsShots) {
+return 2*twoPointsShots+3*threePointsShots
 }
