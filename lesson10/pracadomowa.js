@@ -168,14 +168,19 @@ console.log(modulo(8))
 //Zadanie 3e
 
 function canWatchMovie(age, isAllowed) {
-    (age >= 15) ? console.log("Moze oglądać film"): null;
-    (age < 15 && isAllowed) ? console.log("Moze oglądać film") : null;
-    (age < 15 && !isAllowed) ? console.log("Nie moze oglądać filmu") : null;
+    if (age >= 15) {
+        return "Moze oglądać film"
+    }
+    if (age < 15 && isAllowed) {
+        return "Moze oglądać film"
+    } else if (age < 15 && !isAllowed) {
+        return "Nie moze oglądać filmu"
+    }
 }
 
-canWatchMovie(15)
-canWatchMovie(14, true)
-canWatchMovie(14, false)
+console.log(canWatchMovie(15))
+console.log(canWatchMovie(14, true))
+console.log(canWatchMovie(14, false))
 
 //Zadanie 3f
 
