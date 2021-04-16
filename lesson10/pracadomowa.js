@@ -232,10 +232,14 @@ function whatCarIsIt(inputCar) {
 }
 
 console.log(whatCarIsIt(car))
+car.isCabrio = false
+console.log(whatCarIsIt(car))
+car.rokProdukcji=2022
+console.log(whatCarIsIt(car))
 
 //Zadanie 4b
 
-let table10 = [1,2,3]
+
 function tableLength(inputTable) {
     if (inputTable.length == 0) {
         return "Tablica jest pusta"
@@ -243,8 +247,10 @@ function tableLength(inputTable) {
         return `Tablica ma ${inputTable.length} elementów`
     }
 }
-
+let table10 = [1, 2, 3]
 console.log(tableLength(table10))
+let table11 = []
+console.log(tableLength(table11))
 
 //Zadanie 4c
 
@@ -274,4 +280,11 @@ function recommendation(inputOsoba, inputKsiazka) {
     return "Nie wiem co Ci zaproponować"
 }
 
-console.log(recommendation(osoba,ksiazka))
+osoba.czyLubiCzytacKsiazki=true
+console.log(recommendation(osoba, ksiazka))
+osoba.czyLubiCzytacKsiazki = false
+osoba.maTV=true
+console.log(recommendation(osoba, ksiazka))
+osoba.czyLubiCzytacKsiazki = false
+osoba.maTV = false
+console.log(recommendation(osoba, ksiazka))
