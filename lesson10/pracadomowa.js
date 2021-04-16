@@ -7,7 +7,7 @@ console.log(addThreeNumbers(1, 2, 3))
 //Zadanie 1b
 
 function triangleSurface(height, width) {
-    console.log("Pole trójkąta to", width * height / 2, "czyli ma on", width, "długości podstawy i", height, "wysokości")
+    console.log(`Pole trójkąta to ${width * height / 2} czyli ma on ${width} długości podstawy i ${height} wysokości`)
 }
 triangleSurface(1, 2)
 
@@ -29,7 +29,7 @@ console.log(fuelConsumption(10, 100))
 //Zadanie 1e
 
 function sentence(name, age, kids) {
-    console.log(name,"ma",age,"lat i",kids,"dzieci")
+    console.log(`${name} ma ${age} lat i ${kids} dzieci`)
 }
 sentence ("Ala",23,2)
 
@@ -53,7 +53,7 @@ console.log(return2ndElement(table2))
 
 let table3 = [1, 2, 3]
 function returnLength(inputTable) {
-    console.log("Przekazana tablica ma",inputTable.length,"elementów, a elementem nr 3 jest", inputTable[2])
+    console.log(`Przekazana tablica ma ${inputTable.length} elementów, a elementem nr 3 jest ${inputTable[2]}`)
 }
 returnLength(table3)
 
@@ -83,7 +83,7 @@ console.log(returnName(person, "Ala"))
 //Zadanie 2f
 
 function returnPerson(firstName, lastName, age, height) {
-    console.log(firstName,lastName,"ma", age, "lat i", height,"cm wzrostu")
+    console.log(`${firstName} ${lastName} ma ${age} lat i ${height} cm wzrostu`)
 }
 returnPerson("Igor", "Szwedziński", 49, 193)
 
@@ -213,13 +213,13 @@ let car = {
     rokProdukcji: 1999,
     isCabrio: false,
 }
-function whatCarIsIt(inputCar,) {
+function whatCarIsIt(inputCar) {
     var date = new Date();
     
     if (inputCar.rokProdukcji > date.getFullYear()) {
         console.log("Tego auta jeszcze nie wyprodukowano")
     } else {
-        (inputCar.isCabrio) ? console.log("Typ nadwozia: Kabriolet", ", Model:", inputCar.model, ", Marka:", inputCar.marka, ", Rok produkcji", inputCar.rokProdukcji) : console.log("Typ nadwozia: Niekabriolet", ", Model:", inputCar.model, ", Marka:", inputCar.marka, ", Rok produkcji", inputCar.rokProdukcji)
+        (inputCar.isCabrio) ? console.log(`Typ nadwozia: Kabriolet, Model: ${inputCar.model}, Marka: ${inputCar.marka}, Rok produkcji: ${inputCar.rokProdukcji}`) : console.log(`Typ nadwozia: Niekabriolet, Model: ${inputCar.model}, Marka: ${inputCar.marka}, Rok produkcji: ${inputCar.rokProdukcji}`)
     }
 }
 
@@ -232,7 +232,7 @@ function tableLength(inputTable) {
     if (inputTable.length == 0) {
         console.log("Tablica jest pusta")
     } else {
-        console.log("Tablica ma", inputTable.length, "elementów")
+        console.log(`Tablica ma ${inputTable.length} elementów`)
     }
 }
 
@@ -245,7 +245,7 @@ let osoba = {
     nazwisko: "Jaskóła",
     wiek: 23,
     czyLubiCzytacKsiazki: true,
-    maTV: false,
+    maTV: true,
 }
 
 let ksiazka = {
@@ -256,7 +256,7 @@ let ksiazka = {
 
 function recommendation(inputOsoba, inputKsiazka) {
     if (inputOsoba.czyLubiCzytacKsiazki == true) {
-        console.log("Cześć", inputOsoba.imie, ", polecam Ci przeczytać", inputKsiazka.tytul, ", ma tylko", inputKsiazka.liczbaStron, "stron.")
+        console.log(`Cześć ${inputOsoba.imie}, polecam Ci przeczytać ${inputKsiazka.tytul}, ma tylko ${inputKsiazka.liczbaStron} stron.`)
     } else {
         (inputOsoba.maTV) ? console.log("Idź oglądać TV") : console.log("Nie wiem co Ci zaproponować")
     }
