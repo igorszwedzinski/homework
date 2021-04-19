@@ -22,7 +22,7 @@ console.log(drivingLicenceYears(48, 17))
 //Zadanie 1d
 
 function fuelConsumption(consumption, distance) {
-    return distance / consumption
+    return distance * consumption / 100
 }
 console.log(fuelConsumption(10, 100))
 
@@ -149,142 +149,129 @@ console.log(positiveNegativeZero(0))
 //Zadanie 3d
 
 function modulo(number) {
-    if (number % 3 == 0) {
-        return "Fizz"
-    } else if (number % 5== 0) {
-        return "Buzz"
-    } else {
-        return "FizzBuzz"
+    if (number % 3 == 0 && number % 5 == 0) {
+        return `FizzBuzz`
+    } else if (number % 3 == 0) {
+        return `Fizz`
+    } else if (number % 5 == 0) {
+        return `Buzz`
     }
 }
 
-console.log(modulo(3))
-console.log(modulo(21))
-console.log(modulo(5))
-console.log(modulo(100))
-console.log(modulo(7))
-console.log(modulo(8))
+    console.log(modulo(3))
+    console.log(modulo(21))
+    console.log(modulo(5))
+    console.log(modulo(100))
+    console.log(modulo(7))
+    console.log(modulo(8))
 
-//Zadanie 3e
+    //Zadanie 3e
 
-function canWatchMovie(age, isAllowed) {
-    if (age >= 15) {
-        return "Moze oglądać film"
-    }
-    if (age < 15 && isAllowed) {
-        return "Moze oglądać film"
-    } else if (age < 15 && !isAllowed) {
-        return "Nie moze oglądać filmu"
-    }
-}
-
-console.log(canWatchMovie(15))
-console.log(canWatchMovie(14, true))
-console.log(canWatchMovie(14, false))
-
-//Zadanie 3f
-
-function falseTrue(value) {
-    if (value == true) {
-         return "Tak"
-    } else if (value == false) {
-        return "Nie"
-    }
-}
-
-console.log(falseTrue(true))
-console.log(falseTrue(false))
-
-//Zadanie 3g
-
-function evenOdd(value) {
-    if (value % 2 == 0) {
-        return "Liczba jest parzysta"
-    } else {
-        return "Liczba jest nieparzysta"
-    }
-}
-
-console.log(evenOdd(2))
-console.log(evenOdd(100))
-console.log(evenOdd(7))
-console.log(evenOdd(97))
-
-//Zadanie 4a
-
-let car = {
-    model: "Astra",
-    marka: "Opel",
-    rokProdukcji: 1999,
-    isCabrio: true,
-}
-function whatCarIsIt(inputCar) {
-    var date = new Date();
-    
-    if (inputCar.rokProdukcji > date.getFullYear()) {
-        return "Tego auta jeszcze nie wyprodukowano"
-    }
-    if (inputCar.isCabrio) {
-        return `Typ nadwozia: Kabriolet, Model: ${inputCar.model}, Marka: ${inputCar.marka}, Rok produkcji: ${inputCar.rokProdukcji}` 
+    function canWatchMovie(age, isAllowed) {
+        if (age >= 15) {
+            return "Moze oglądać film"
+        }
+        if (age < 15 && isAllowed) {
+            return "Moze oglądać film"
+        } else if (age < 15 && !isAllowed) {
+            return "Nie moze oglądać filmu"
+        }
     }
 
-    return `Typ nadwozia: Niekabriolet, Model: ${inputCar.model}, Marka: ${inputCar.marka}, Rok produkcji: ${inputCar.rokProdukcji}`
-}
+    console.log(canWatchMovie(15))
+    console.log(canWatchMovie(14, true))
+    console.log(canWatchMovie(14, false))
 
-console.log(whatCarIsIt(car))
-car.isCabrio = false
-console.log(whatCarIsIt(car))
-car.rokProdukcji=2022
-console.log(whatCarIsIt(car))
+    //Zadanie 3f
 
-//Zadanie 4b
-
-
-function tableLength(inputTable) {
-    if (inputTable.length == 0) {
-        return "Tablica jest pusta"
-    } else {
-        return `Tablica ma ${inputTable.length} elementów`
+    function falseTrue(value) {
+        return ((value == true) ? "Tak" : "Nie")
     }
-}
-let table10 = [1, 2, 3]
-console.log(tableLength(table10))
-let table11 = []
-console.log(tableLength(table11))
 
-//Zadanie 4c
+    console.log(falseTrue(true))
+    console.log(falseTrue(false))
 
-let osoba = {
-    imie: "Zenon",
-    nazwisko: "Jaskóła",
-    wiek: 23,
-    czyLubiCzytacKsiazki: true,
-    maTV: false,
-}
+    //Zadanie 3g
 
-let ksiazka = {
-    tytul: "Śmierć w Wenecji",
-    rodzaj: "Kryminał",
-    liczbaStron: 350,
-}
-
-function recommendation(inputOsoba, inputKsiazka) {
-    if (inputOsoba.czyLubiCzytacKsiazki == true) {
-        return `Cześć ${inputOsoba.imie}, polecam Ci przeczytać ${inputKsiazka.tytul}, ma tylko ${inputKsiazka.liczbaStron} stron.`
+    function evenOdd(value) {
+        return ((value % 2 == 0) ? "Liczba jest parzysta" : "Liczba jest parzysta")
     }
-    
-    if (inputOsoba.maTV) {
-        return "Idź oglądać TV" 
-    }
-    
-    return "Nie wiem co Ci zaproponować"
-}
 
-osoba.czyLubiCzytacKsiazki=true
-console.log(recommendation(osoba, ksiazka))
-osoba.czyLubiCzytacKsiazki = false
-osoba.maTV=true
-console.log(recommendation(osoba, ksiazka))
-osoba.czyLubiCzytacKsiazki = false
-osoba.maTV = false
-console.log(recommendation(osoba, ksiazka))
+    console.log(evenOdd(2))
+    console.log(evenOdd(100))
+    console.log(evenOdd(7))
+    console.log(evenOdd(97))
+
+    //Zadanie 4a
+
+    let car = {
+        model: "Astra",
+        marka: "Opel",
+        rokProdukcji: 1999,
+        isCabrio: true,
+    }
+    function whatCarIsIt(inputCar) {
+        if (inputCar.rokProdukcji >= 2021) {
+            return `Model jeszcze nie jest dostępny`
+        } else if (inputCar.rokProdukcji <= 2020) {
+            return `Samochód który Cię interesuje to ${inputCar.marka}, model - ${inputCar.model}. Jest to rocznik ${inputCar.rokProdukcji}, a więc ma tylko ${(2021 - inputCar.rokProdukcji)} lata. Pojazd ten ${(inputCar.isCabrio ? "jest kabrioletem" : "nie jest kabrioletem")}`
+        }
+    }
+
+    console.log(whatCarIsIt(car))
+    car.isCabrio = false
+    console.log(whatCarIsIt(car))
+    car.rokProdukcji = 2022
+    console.log(whatCarIsIt(car))
+
+    //Zadanie 4b
+
+
+    function tableLength(inputTable) {
+        if (inputTable.length == 0) {
+            return "Tablica jest pusta"
+        } else {
+            return `Tablica ma ${inputTable.length} elementów`
+        }
+    }
+    let table10 = [1, 2, 3]
+    console.log(tableLength(table10))
+    let table11 = []
+    console.log(tableLength(table11))
+
+    //Zadanie 4c
+
+    let osoba = {
+        imie: "Zenon",
+        nazwisko: "Jaskóła",
+        wiek: 23,
+        czyLubiCzytacKsiazki: true,
+        maTV: false,
+    }
+
+    let ksiazka = {
+        tytul: "Śmierć w Wenecji",
+        rodzaj: "Kryminał",
+        liczbaStron: 350,
+    }
+
+    function recommendation(inputOsoba, inputKsiazka) {
+        if(inputOsoba.czyLubiCzytacKsiazki == true) {
+            return `Cześć ${inputOsoba.nazwisko}, powinieneś/powinnaś poczytać książkę, na przykład ${inputKsiazka.tytul}, z gatunku ${inputKsiazka.rodzaj} - ma tylko ${inputKsiazka.liczbaStron} stron.`
+        } else {
+            if (inputOsoba.maTV == false) {
+                return `Cześć ${inputOsoba.nazwisko}, skoro nie lubisz książek i nie masz telewizora, proponuję iść pobiegać`
+            } else {
+                return `Cześć ${inputOsoba.nazwisko}, skoro nie lubisz książek, może pooglądasz telewizję?`
+            }
+        }
+    }
+
+    osoba.czyLubiCzytacKsiazki=true
+    console.log(recommendation(osoba, ksiazka))
+    osoba.czyLubiCzytacKsiazki = false
+    osoba.maTV=true
+    console.log(recommendation(osoba, ksiazka))
+    osoba.czyLubiCzytacKsiazki = false
+    osoba.maTV = false
+    console.log(recommendation(osoba, ksiazka))
